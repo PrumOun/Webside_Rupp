@@ -1,0 +1,27 @@
+.navbar {
+    margin: 0;
+    border: none;
+}
+
+.navbar .dropdown {
+    border: none;
+    color: white;
+}
+
+.navbar .dropdown .dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar:hover {
+    background-color: rgb(240, 203, 203);
+}
+
+/* Center align the navigation items */
+.navbar-nav {
+    margin: auto;
+    /* Center the nav items horizontally */
+}

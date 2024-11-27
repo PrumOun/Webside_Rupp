@@ -1,0 +1,57 @@
+/* Navigation Bar */
+.logo {
+    width: 100px;
+}
+
+.navbar .dropdown {
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .dropdown .dropdown-toggle1 {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #cd1d1d;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.navbar .dropdown .dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar .dropdown .dropdown-menu a:hover {
+    background-color: #cc0000;
+}
+
+/* Show the dropdown menu when hovering over the dropdown */
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.btn{
+    color: antiquewhite;
+    border: whitesmoke solid;
+}
+.btn:hover{
+    color: antiquewhite;
+    border: whitesmoke solid;
+    background-color: #cc0000;
+}

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern University</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/NavigationBar.css">
+    <link rel="stylesheet" href="css/DropDown.css">
+    <link rel="stylesheet" href="css/About.css">
+    <link rel="stylesheet" href="css/Courses.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <style>
+        /* Hero */
+        .carousel-inner h5,
+        p {
+            color: whitesmoke;
+        }
+
+        .study-area .card-title a {
+            color: #001a7a;
+            text-decoration: none;
+        }
+
+        .study-area .card-title a:hover {
+            text-decoration: underline;
+        }
+
+        .study-area .card-text {
+            color: #000;
+            /* Set description text color to black */
+        }
+
+        .text-center {
+            color: #661a1a;
+            /* Set description text color to black */
+        }
+
+        .news-title a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .news-title a:hover {
+            color: #661a1a;
+            /* Matches the red heading for hover effect */
+        }
+
+        .card-text {
+            color: white;
+            /* Ensure all card text is black */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger bg-gradient">
+        <div class="container">
+            <img class="logo" src="https://seaknowledgebank.net/sites/default/files/2024-05/RUPP.PNG" alt="">
+            <div class="dropdown">
+                <button class="btn btn-danger dropdown-toggle1" type="button" id="universityDropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Royal University of Phnom Penh
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="universityDropdown">
+                    <li><a class="dropdown-item" href="#">Royal University of Phnom Penh Pochentong</a></li>
+                    <li><a class="dropdown-item" href="#">Royal University of Phnom Penh Vimean Chnes Chnes</a></li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Student</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programs">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">RUPP Online</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- dropdown -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <!-- Dropdown 1 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                            <li><a class="dropdown-item" href="#">Undergraduate</a></li>
+                            <li><a class="dropdown-item" href="#">Postgraduate</a></li>
+                            <li><a class="dropdown-item" href="#">Short Courses</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="studyDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Study with us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="studyDropdown">
+                            <li><a href="#">Levels of study</a></li>
+                            <li><a href="#">Admission</a></li>
+                            <li><a href="#">Scholarships</a></li>
+                            <li><a href="#">Application Process</a></li>
+                            <li><a href="#">Parents</a></li>
+                            <li><a href="#">Careers advisers</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown 3 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="lifeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Life at RUPP
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="lifeDropdown">
+                            <li><a href="#">Study experience</a></li>
+                            <li><a href="#">Student life</a></li>
+                            <li><a href="#">Clubs</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Campus Life</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown 4 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Governance and management</a></li>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Schools and colleges</a></li>
+                            <li><a href="#">Our locations and facilities</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown 5 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Research
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="researchDropdown">
+                            <li><a href="#">Our research</a></li>
+                            <li><a href="#">Centres and collaborations</a></li>
+                            <li><a href="#">Partnerships</a></li>
+                            <li><a href="#">Research degrees</a></li>
+                            <li><a href="#">Publications</a></li>
+                            <li><a href="#">Projects</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown 6 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="partnerDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Partner
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="partnerDropdown">
+                            <li><a href="#">Industries</a></li>
+                            <li><a href="#">Staff development and training</a></li>
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="#">Collaboration Opportunities</a></li>
+                            <li><a href="#">Giving</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown 7 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="internationalDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            International
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="internationalDropdown">
+                            <li><a class="dropdown-item" href="#">Study Abroad</a></li>
+                            <li><a class="dropdown-item" href="#">Exchange Programs</a></li>
+                            <li><a class="dropdown-item" href="#">Global Campuses</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://www.rupp.edu.kh/img/slideshow/silk4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Silk Center Inauguration.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://www.rupp.edu.kh/img/slideshow/hydroponics1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Hydroponics.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.rupp.edu.kh/img/slideshow/community_event1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Community Products Fair.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.rupp.edu.kh/img/slideshow/silk1.jpg?1732639563122" class="d-block w-100"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Silk Center Inauguration.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Section -->
+    <section class="container info-section">
+        <h1 class="mb-5">RUPP is an Royal University of Phnom Penh</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="icon-circle">
+                    <img src="https://www.rmit.edu.au/content/dam/rmit/common-assets/icons/Award-navy.svg"
+                        alt="Top 150 Icon">
+                </div>
+                <h2 class="title">Top 2,711</h2>
+                <p>universities Asia*</p>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-circle">
+                    <img src="https://www.rmit.edu.au/content/dam/rmit/common-assets/icons/bbus/innovation-and-enterprise.svg"
+                        alt="Placements Icon">
+                </div>
+                <h2 class="title">12 Colleges</h2>
+                <p>with industry for students in 2024.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-circle">
+                    <img src="https://www.rmit.edu.au/content/dam/rmit/common-assets/icons/brand-icon-navy-jetsetter.svg"
+                        alt="Students Icon">
+                </div>
+                <h2 class="title">30,071+ students</h2>
+                <p>from 25 different Provinces and Citi.</p>
+            </div>
+        </div>
+        <div class="mt-3">
+            <a href="https://www.adscientificindex.com/university/Royal+University+of+Phnom+Penh/"
+                class="text-primary">More reputation and rankings</a>
+        </div>
+        <p class="mt-3 text-muted">Source: www.adscientificindex.com</p>
+    </section>
+
+    <!-- News Section -->
+    <div class="container my-5">
+        <h2 class="mb-4" style="color: #661a1a;">News</h2>
+        <div class="row g-4 ">
+            <!-- News Item 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-danger bg-gradient">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh9tQ_roQ_n4UZqlYLWrQqE1WI5LgUhoUgZMCuRuJWNaF7WreOC6j3jwrKDi5B4LWNaMQ&usqp=CAU"
+                        class="card-img-top" alt="News 1">
+                    <div class="card-body">
+                        <h5 class="news-title"><a href="news1-page.html">The Graduation Ceremony for the Students of the
+                                Royal University of Phnom Penh </a></h5>
+                        <p class="card-text">The Graduation Ceremony for the Students of the Royal University of Phnom
+                            Penh was held at the Koh Pich Theater under the high presidency of His Excellency Hun Manet,
+                            Prime Minister of the Kingdom of Cambodia.</p>
+                        <a href="news1-page.html" class="btn btn-outline-secondary btn-sm mt-3">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- News Item 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-danger bg-gradient">
+                    <img src="https://www.wedushare.com/_next/image?url=%2Fuploads%2FRoyal_University_of_Phnom_Penh_44f04fb2e3.jpg&w=3840&q=75"
+                        class="card-img-top" alt="News 2">
+                    <div class="card-body">
+                        <h5 class="news-title"><a href="news2-page.html">Royal University of Phnom Penh Scholarship</a>
+                        </h5>
+                        <p class="card-text">The Ministry of Education, Youth and Sports would like to inform the public
+                            that the Ministry will select 8621 candidates to receive scholarships to study for a
+                            bachelor's degree without paying 100% tuition fees for the academic year 2024-2025.
+                        </p>
+                        <a href="https://www.wedushare.com/programs/royal-university-of-phnom-penh-scholarship?type=partially-funded"
+                            class="btn btn-outline-secondary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- News Item 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-danger bg-gradient">
+                    <img src="https://image.freshnewsasia.com/2021//fn-2023-11-23-17-13-00-0.jpg" class="card-img-top"
+                        alt="News 3">
+                    <div class="card-body">
+                        <h5 class="news-title"><a href="news3-page.html">Six students of the Royal University of Phnom
+                                Penh continue their studies at Angelo State National University through the 1 + 3
+                                program</a></h5>
+                        <p class="card-text">Through the 1 + 3 program at the Royal University of Phnom Penh (RUPP), six
+                            Cambodian students have the opportunity to pass the exam to continue their studies at Angelo
+                            State University, a large national university in Texas, USA.
+                        </p>
+                        <a href="https://freshnewsasia.com/index.php/en/localnews/318871-2023-11-23-10-13-18.html"
+                            class="btn btn-outline-secondary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="#" class="btn btn-dark">See More</a>
+        </div>
+    </div>
+
+    <!-- Courses Section -->
+    <div class="container mt-5">
+        <div class="study-section">
+            <h2 class="text-center">What would you like to study?</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=1aKoLvEsfdl7&format=png" alt="Architecture">
+                        <a href="#">Biology</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=cIvMqIm3AWTj&format=png" alt="Biomedical sciences">
+                        <a href="#">Chemistry</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=80&id=b0gmtJdjuMRS&format=png" alt="Communication">
+                        <a href="#">Computer Science</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=6z16AKadw36a&format=png" alt="Engineering">
+                        <a href="#">Environment Science</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=13208&format=png" alt="Health">
+                        <a href="#">Mathematics</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=13159&format=png" alt="Media">
+                        <a href="#">Physics</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=40&id=32616&format=png" alt="Science">
+                        <a href="#">Geography</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=104092&format=png" alt="Art">
+                        <a href="#">History</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=13171&format=png" alt="Building">
+                        <a href="#">Khmer Literature</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=jctqlWKuX9v7&format=png" alt="Design">
+                        <a href="#">Philosophy</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=40&id=32663&format=png" alt="Environment">
+                        <a href="#">Psychology</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=80&id=CVauEDsXKaWz&format=png"
+                            alt="Information technology">
+                        <a href="#">Sociology</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=108778&format=png" alt="Property">
+                        <a href="#">Tourism</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=64&id=113702&format=png" alt="Social and community">
+                        <a href="#">Social Work</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=xapj7ZzAUZKI&format=png" alt="Aviation">
+                        <a href="#">English</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=5RtaKEr09Jy6&format=png" alt="Business">
+                        <a href="#">French</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=KvglG3FkCenH&format=png" alt="Education">
+                        <a href="#">Japanese</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=uCynf758t5TG&format=png" alt="Fashion">
+                        <a href="#">Korean</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=FEav4DJ1yMx7&format=png" alt="Law">
+                        <a href="#">Thai</a>
+                    </div>
+                    <div class="study-item">
+                        <img src="https://img.icons8.com/?size=48&id=hJH38ZLt2wMU&format=png" alt="Psychology">
+                        <a href="#">International Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Programs Section -->
+    <div class="container my-5 study-area">
+        <h2 class="text-center mb-3">Browse our study areas</h2>
+        <p class="text-center mb-4">Learn more about each of our study areas to match your passion with the perfect
+            course for your dream career.</p>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://rupp.edu.kh/fs/biology/image_banner/Ch5.jpg" class="card-img-top"
+                        alt="Architecture">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="architecture-page.html">Biology</a></h5>
+                        <p class="card-text">Students studying in the Department of Biology gain knowledge about plants
+                            and animals, and build crucial laboratory research and fieldwork skills. Students spend the
+                            first year studying the Foundation Studies course, and the remainder of their degree gaining
+                            a solid grounding in general biology.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://www.rupp.edu.kh/fs/chemistry/image_banner/Ch10.jpg" class="card-img-top"
+                        alt="Art">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="art-page.html">Chemistry</a></h5>
+                        <p class="card-text">The Department of Chemistry offers three degrees, Bachelor of Science in
+                            Chemistry, Bachelor of Science in Biochemistry and Master of Analytical Chemistry. As in all
+                            departments of the Royal University of Phnom Penh, all students study Foundation Year
+                            courses during their first year, and then specialize from their second year on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://rupp.edu.kh/fs/computer_science/image_banner/EC3.jpg" class="card-img-top"
+                        alt="Aviation">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="aviation-page.html">Computer Science</a></h5>
+                        <p class="card-text">With the increasing importance of computers and information technology (IT)
+                            in the workplace, computer knowledge is an indispensable skill for almost all professional
+                            fields. The Bachelor of Science in Computer Science degree provides students with necessary
+                            training and technical knowledge in various aspects of software for the IT industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBKBMuNRC8oft6vJcE8p1bgqstKynPNQ2svA&s"
+                        class="card-img-top" alt="Environment Science">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="biomedical-page.html">Environment Science</a></h5>
+                        <p class="card-text">An understanding of environmental science is important in a rapidly
+                            developing world. This is particularly the case in Cambodia, where development often takes
+                            place without adequate planning to ensure sustainability, and where environmental laws are
+                            often not implemented or enforced. These obstacles to environmental protection and
+                            conservation in Cambodia serve to make the teaching of Environmental Science particularly
+                            important.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://rupp.edu.kh/fs/computer_science/image_banner/EMC4.jpg" class="card-img-top"
+                        alt="Architecture">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="architecture-page.html">Mathematics</a></h5>
+                        <p class="card-text">The degree of Bachelor of Science in Mathematics equips Cambodian students
+                            with the skills and competencies necessary to contribute to the development of Cambodia as
+                            teachers, statisticians, scientific managers, actuaries, system analysts and other
+                            professionals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://rupp.edu.kh/fs/physics/image_banner/4.jpg" class="card-img-top" alt="Art">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="art-page.html">Physics</a></h5>
+                        <p class="card-text">The Department of Physics at the Royal University of Phnom Penh currently
+                            offers two degrees, Bachelor of Science in Physics and Master of Science in Physics. The
+                            students take the Foundation Study course during their first year, and then the Major course
+                            study from the second year onwards. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://rupp.edu.kh/fssh/tourism/image_banner/CUL4.jpg" class="card-img-top"
+                        alt="Aviation">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="aviation-page.html">Geography</a></h5>
+                        <p class="card-text">The Bachelor of Arts in Geography and Land Management provides students
+                            with knowledge of human, physical and economic geography, as well as land management, to
+                            meet the high demand for people skilled in these fields in Cambodia. These skills are
+                            particularly relevant in Cambodia, which is experiencing a shortage of skilled and effective
+                            managers in agriculture, geography, and land management. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://rupp.edu.kh/fssh/tourism/image_banner/T6.jpg" class="card-img-top"
+                        alt="Biomedical sciences">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="biomedical-page.html">History</a></h5>
+                        <p class="card-text">The degree of Bachelor of Arts in History provides students with a
+                            knowledge and understanding of Khmer, Asian and World history, with a particular focus on
+                            the socio-economic, political, cultural and identity development of Cambodia and the
+                            Southeast Asian region. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://rupp.edu.kh/fssh/tourism/image_banner/CUL2.jpg" class="card-img-top"
+                        alt="Architecture">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="architecture-page.html">Khmer Literature</a></h5>
+                        <p class="card-text">The Bachelor of Arts in Khmer Literature teaches students to analyse,
+                            explain and compare all aspects of Khmer language and literature. Students gain an expert
+                            knowledge of Khmer language and literature, which forms the basis of Khmer culture and
+                            identity. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://rupp.edu.kh/fssh/tourism/image_banner/CUL1.jpg" class="card-img-top" alt="Art">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="art-page.html">Tourism</a></h5>
+                        <p class="card-text">Cambodia's attractiveness as a tourist destination has grown tremendously
+                            in the last decade, a trend which will continue into the future. As a result, many new
+                            managerial and administrative jobs in tourism marketing, development, planning, visitor
+                            services, hospitality and transport have been generated. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://rupp.edu.kh/ifl/english/image_banner/img_ifl_doe.jpg" class="card-img-top"
+                        alt="Aviation">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="aviation-page.html">English</a></h5>
+                        <p class="card-text">The Bachelor of Education in Teaching English as a Foreign Language (TEFL)
+                            and the Bachelor of Arts in English for Work Skills are four-year programs designed to meet
+                            the demands from commercial, public and voluntary sectors requiring professionals with
+                            advanced skills in English. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100">
+                    <img src="https://human.msu.ac.th/wp-content/uploads/2024/05/441373937_422953950696845_3609682104098674398_n-1024x683.jpg"
+                        class="card-img-top" alt="Biomedical sciences">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="biomedical-page.html">Chinese</a></h5>
+                        <p class="card-text">The Chinese Language Specialty cultivates students to achieve the ability
+                            of proficient spoken and writing Chinese language, of abundant knowledge about Chinese
+                            language, literature, culture and society. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer bg-danger bg-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 mb-3">
+                    <img class="logo" src="https://seaknowledgebank.net/sites/default/files/2024-05/RUPP.PNG" alt="">
+                    <ul class="list-unstyled ">
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Maps</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-3">
+                    <h5>Study with Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Levels of study</a></li>
+                        <li><a href="#">Admission</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Application Process</a></li>
+                        <li><a href="#">Parents</a></li>
+                        <li><a href="#">Careers advisers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-3">
+                    <h5>Life at RUPP</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Study experience</a></li>
+                        <li><a href="#">Student life</a></li>
+                        <li><a href="#">Clubs</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Campus Life</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-3">
+                    <h5>Research</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Our research</a></li>
+                        <li><a href="#">Centres and collaborations</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                        <li><a href="#">Research degrees</a></li>
+                        <li><a href="#">Publications</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-3">
+                    <h5>Partner</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Industries</a></li>
+                        <li><a href="#">Staff development and training</a></li>
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Collaboration Opportunities</a></li>
+                        <li><a href="#">Giving</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-3">
+                    <h5>About</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Governance and management</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Schools and colleges</a></li>
+                        <li><a href="#">Our locations and facilities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>Copyright © 2024 RUPP University | <a href="#">Terms</a> | <a href="#">Privacy</a> | <a
+                        href="#">Accessibility</a> | <a href="#">Website feedback</a> | <a href="#">Complaints</a>
+                </p>
+                <p>MOEYS provider number: 099 999 999 | RUPP provider number: 099 888 888 | Open Universities
+                    Cambodia</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-weibo"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.study-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-image: url('https://img.freepik.com/premium-vector/vector-modern-decorative-wave-design-background_921039-11196.jpg?semt=ais_hybrid');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.study-section h2 {
+    color: #661a1a;
+    margin-bottom: 20px;
+}
+
+.study-section .study-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.study-section .study-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.study-section .study-item a {
+    color: #052049;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.study-section .study-item a:hover {
+    text-decoration: underline;
+}
